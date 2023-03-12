@@ -1,0 +1,8 @@
+
+.image-container{
+    display: inline-block;
+    width: 60vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255,1) 100%), url(main.png);
+    background-position: center;
+}
