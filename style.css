@@ -1,8 +1,112 @@
+*{
+    font-family: 'Roboto Slab', serif;
+}
 
-.image-container{
-    display: inline-block;
-    width: 60vw;
+.image-container {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255,1) 100%), url(main.png);
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%), url(recursos/justinmain.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.cf_logo {
+    background-image: url(recursos/cf_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.power{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body::before {
+    content: "XS";
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+@media (min-width: 576px) {
+    body::before {
+        content: "SM";
+    }
+}
+
+@media (min-width: 768px) {
+    body::before {
+        content: "MD";
+    }
+}
+
+@media (min-width: 992px) {
+    body::before {
+        content: "LG";
+    }
+}
+
+@media (min-width: 1200px) {
+    body::before {
+        content: "XL";
+    }
+}
+
+@media (min-width: 1400px) {
+    body::before {
+        content: "XXL";
+    }
 }
