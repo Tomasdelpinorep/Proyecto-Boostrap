@@ -1,14 +1,53 @@
-*{
+* {
     font-family: 'Roboto Slab', serif;
 }
 
 .image-container {
-    height: 100vh;
+    height: 97vh;
+    min-height: 700px;
     width: 100%;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%), url(recursos/justinmain.jpg);
+}
+
+.main1 {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%), url(recursos/justinmain.jpg);
+}
+
+.main2 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%),url(recursos/toomeymain.png);
+}
+
+.main3 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%),url(recursos/vellnermain.jpg);
+}
+
+.main4 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%),url(recursos/horvathmain.jpg);
+}
+
+.main5 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%),url(recursos/gudmunsonmain.png);
+}
+
+.main6 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%),url(recursos/malmain.png);
 }
 
 .cf_logo {
@@ -17,19 +56,81 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+    max-width: 400px;
     height: 200px;
+    margin: auto;
 }
 
-img {
-    max-width: 100%;
-}
-
-.power{
+.power {
     font-size: 2rem;
     text-align: center;
     font-weight: 700;
+    margin-top: -50px;
 }
 
+@media (max-width: 992px) {
+    .main1 {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%), url(recursos/justinmain.jpg);
+    }
+
+    .main2 {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%), url(recursos/toomeymain.png);
+    }
+
+    .main3 {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%), url(recursos/vellnermain.jpg);
+    }
+
+    .main4 {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%), url(recursos/horvathmain.jpg);
+    }
+
+    .main5 {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%), url(recursos/gudmunsonmain.png);
+    }
+
+    .main6 {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255, 1) 100%), url(recursos/malmain.png);
+    }
+}
+
+.athlete_photo {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.men1 {
+    background-image: url(recursos/men1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.men2 {
+    background-image: url(recursos/men2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.men3 {
+    background-image: url(recursos/men3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.men4 {
+    background-image: url(recursos/men4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.men5 {
+    background-image: url(recursos/men5.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 
 
