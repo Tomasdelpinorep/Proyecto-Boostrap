@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
@@ -22,6 +22,34 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 dark border-dark" type="search" placeholder="Rafael Villar el mejor" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    </nav>
     <div class="container-fluid p-0">
         <div class="row">
             <div class="col-lg-8 col-12 p-0">
@@ -46,11 +74,11 @@
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                             aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
                             aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
                             aria-label="Slide 6"></button>
                     </div>
                     <div class="carousel-inner">
@@ -89,12 +117,12 @@
             <div class="col-lg-4 col-12 p-4">
                 <div class="cf_logo"></div>
                 <h1 class="power">Power Rankings</h1>
-                <p> Falta dropdown, tablas, newsletter (formulario), galeria de fotos</p>
                 <select name="gender" id="gender" class="form-select">
+                    <option value="None"></option>
                     <option value="m">Men</option>
                     <option value="f">Women</option>
                 </select>
-                <table class="table text-center">
+                <table id="m" class="table text-center">
                     <thead>
                         <tr>
                             <th>Rank</th>
@@ -144,6 +172,66 @@
                             </td>
                             <td class="align-middle">Lazar Dukic</td>
                             <td class="align-middle">18920</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">*Utilizar Chrome para la correcta función de la página</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="f" class="table text-center">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Photo</th>
+                            <th>Athlete</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">1</td>
+                            <td>
+                                <div class="athlete_photo men1"></div>
+                            </td>
+                            <td class="align-middle">Tia Clair Toomey</td>
+                            <td class="align-middle">33460</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">2</td>
+                            <td>
+                                <div class="athlete_photo men2"></div>
+                            </td>
+                            <td class="align-middle">Patrick Vellner</td>
+                            <td class="align-middle">23940</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">3</td>
+                            <td>
+                                <div class="athlete_photo men3"></div>
+                            </td>
+                            <td class="align-middle">Björgvin Karl Gudmundsson</td>
+                            <td class="align-middle">19940</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">4</td>
+                            <td>
+                                <div class="athlete_photo men4"></div>
+                            </td>
+                            <td class="align-middle">Saxon Panchick</td>
+                            <td class="align-middle">19450</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">5</td>
+                            <td>
+                                <div class="athlete_photo men5"></div>
+                            </td>
+                            <td class="align-middle">Lazar Dukic</td>
+                            <td class="align-middle">18920</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">*Utilizar Chrome para la correcta función de la página</td>
                         </tr>
                     </tbody>
                 </table>
