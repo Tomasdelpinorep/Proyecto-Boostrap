@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://www.crossfit.com">CrossFit.com</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,22 +33,47 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="athletes.html">Athletes</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#newsletter">Newsletter</a>
+                        <a class="nav-link" href="#">Athletes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >Newsletter</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2 dark border-dark" type="search" placeholder="Rafael Villar el mejor" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
     </nav>
+    </nav>
     <div class="container-fluid p-0">
         <div class="row">
             <div class="col-lg-8 col-12 p-0">
+                <div class="dropdown position-absolute z-2">
+                    <label class="hamburger-menu d-flex flex-column z-3">
+                        <input type="checkbox">
+                    </label>
+                    <aside class="sidebar">
+                        <nav>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Athletes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" >Newsletter</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                </div>
+
                 <div id="carouselExampleIndicators" class="carousel slide position-relative" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -155,6 +180,9 @@
                             <td class="align-middle">Lazar Dukic</td>
                             <td class="align-middle">18920</td>
                         </tr>
+                        <tr>
+                            <td colspan="4">*Utilizar Chrome para la correcta función de la página</td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -209,29 +237,24 @@
                             <td class="align-middle">Danielle Brandon</td>
                             <td class="align-middle">19190</td>
                         </tr>
+                        <tr>
+                            <td colspan="4">*Utilizar Chrome para la correcta función de la página</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-        <div id="newsletter" class="row bg-dark newsletter justify-content-center text-center p-2">
-            <h5>Stay up do date! Sign up to the newsletter</h5>
-            <form class="form-floating w-25 newsletter">
-                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
-                <label for="floatingInputValue">Email</label>
-                <button class="btn btn-success m-2" type="submit">Submit</button>
-            </form>
-        </div>
     </div>
 
     <script>
-        function showMe(value) {
-            if (value == "men") {
-                document.getElementById("men-table").style.display = "table"
-                document.getElementById("women-table").style.display = "none"
+        function showMe(value){
+            if (value =="men"){
+                document.getElementById("men-table").style.display="table"
+                document.getElementById("women-table").style.display="none"
             }
-            if (value == "women") {
-                document.getElementById("men-table").style.display = "none"
-                document.getElementById("women-table").style.display = "table"
+            if (value == "women"){
+                document.getElementById("men-table").style.display="none"
+                document.getElementById("women-table").style.display="table"
             }
         }
     </script>

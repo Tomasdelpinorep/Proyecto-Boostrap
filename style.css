@@ -3,7 +3,7 @@
 }
 
 .image-container {
-    height: 97vh;
+    height: 92vh;
     min-height: 700px;
     width: 100%;
 }
@@ -132,6 +132,36 @@
     background-position: center;
 }
 
+.women1{
+    background-image: url(recursos/women1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.women2{
+    background-image: url(recursos/women2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.women3{
+    background-image: url(recursos/women3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.women4{
+    background-image: url(recursos/women4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.women5{
+    background-image: url(recursos/women5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 :root{
     --bar-width: 40px;
     --bar-height:8px;
@@ -200,22 +230,11 @@
     translate: 0;
 }
 
-@media (min-width:992px){
-    .dropdown{
-        display: none;
-    }
-}
-
-@media (max-width:992px) {
-    .navbar{
-        display: none;
-    }
-}
-
-table{
+#women-table{
     display: none;
 }
 
-#gender option:checked + table{
-    display: table;
+.newsletter h5{
+    color: white;
 }
+

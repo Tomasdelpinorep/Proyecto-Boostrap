@@ -1,0 +1,153 @@
+.athletePhoto {
+    min-height: 250px;
+    border:2px solid black ;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.col-12{
+    max-width: 300px !important;
+}
+
+.country{
+    width: 100px;
+    height: 50px;
+    margin: auto;
+}
+
+.usa{
+    background-image: url(recursos/usa.png);
+    background-size:cover;
+}
+
+.canada{
+    background-image: url(recursos/canada.jpeg);
+    background-size:cover;
+}
+
+.hungary{
+    background-image: url(recursos/hungary.png);
+    background-size:cover;
+}
+
+.serbia{
+    background-image: url(recursos/serbia.png);
+    background-size:cover;
+    background-position: center;
+}
+
+.australia{
+    background-image: url(recursos/australia.png);
+    background-size:cover;
+}
+
+.iceland{
+    background-image: url(recursos/iceland.png);
+    background-size:cover;
+    background-position: center;
+}
+
+.men1 {
+    background-image: url(recursos/men1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.men2 {
+    background-image: url(recursos/men2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.men3 {
+    background-image: url(recursos/men3.jpg);
+    background-size: cover;
+}
+
+.men4 {
+    background-image: url(recursos/men4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.men5 {
+    background-image: url(recursos/men5.jpg);
+    background-size: cover;
+}
+
+.women1 {
+    background-image: url(recursos/women1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.women2 {
+    background-image: url(recursos/women2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.women3 {
+    background-image: url(recursos/women3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.women4 {
+    background-image: url(recursos/women4.jpeg);
+    background-size: cover;
+}
+
+.women5 {
+    background-image: url(recursos/women5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "XS";
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* This box class is purely used for explaining how the bootstrap grid system works. */
+.box {
+    background-color: lightblue;
+    border: 1px solid blue;
+    min-height: 50px;
+    font-size: 2rem;
+}
+
+@media (min-width: 576px) {
+    body::before {
+        content: "SM";
+    }
+}
+
+@media (min-width: 768px) {
+    body::before {
+        content: "MD";
+    }
+}
+
+@media (min-width: 992px) {
+    body::before {
+        content: "LG";
+    }
+}
+
+@media (min-width: 1200px) {
+    body::before {
+        content: "XL";
+    }
+}
+
+@media (min-width: 1400px) {
+    body::before {
+        content: "XXL";
+    }
+}
