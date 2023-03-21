@@ -101,7 +101,7 @@
                 <div class="cf_logo"></div>
                 <h1 class="power">Power Rankings</h1>
                 <select name="gender" id="gender" class="form-select" onChange="showMe(this.value);">
-                    <option value="men">Men</option>
+                    <option selected value="men">Men</option>
                     <option value="women">Women</option>
                 </select>
                 <table id="men-table" class="table text-center">
@@ -213,15 +213,74 @@
                 </table>
             </div>
         </div>
-        <div id="newsletter" class="row bg-dark newsletter justify-content-center text-center p-2">
-            <h5>Stay up do date! Sign up to the newsletter</h5>
-            <form class="form-floating w-25 newsletter">
-                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
-                <label for="floatingInputValue">Email</label>
-                <button class="btn btn-success m-2" type="submit">Submit</button>
-            </form>
-        </div>
     </div>
+
+    </div><!-- Footer -->
+    <footer class=" text-center text-white" style="background-color:#212529;">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div id="newsletter" class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example2" class="form-control" />
+                                <label class="form-label" for="form5Example2">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    This website was built with the purpose of practicing website development using Bootstrap 5. Any and
+                    all constructive criticism is welcome.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:
+            <a class="text-white" href="#">Del Pino Web Productions S.A</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
     <script>
         function showMe(value) {
